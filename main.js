@@ -33,7 +33,7 @@ function gotResult(error, results){
 function draw(){
     image(img,  0, 0, 640, 420);
 
-    for(var i=0; i < objects.lenght; i++){
+    for(var i=0; i < objects.length; i++){
         fill(255, 0, 0);
         percent = floor(objects[i].confidence *100);
         text(objects[i].label + " " + percent + "%", objects[i].x + 15, objects[i].y + 15);
